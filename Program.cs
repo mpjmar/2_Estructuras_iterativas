@@ -12,7 +12,7 @@ namespace _2_Estructuras_iterativas
     internal class Program
     {
 
-        static void ejercicio1()
+        static void Ejercicio1()
         {
             Console.WriteLine("Esta aplicación pide dos números y muestra cual es mayor.");
             int num1 = ParseInt("Introduce el primer número: ");
@@ -27,7 +27,7 @@ namespace _2_Estructuras_iterativas
         }
 
 
-        static void ejercicio2()
+        static void Ejercicio2()
         {
             Console.WriteLine("Este programa calcula el coste de la factura de la luz.");
             int kw = ParseInt("Introduce la cantidad de kilowatios: ");
@@ -41,7 +41,7 @@ namespace _2_Estructuras_iterativas
             Console.WriteLine();
         }
 
-        static void ejercicio3()
+        static void Ejercicio3()
         {
             Console.WriteLine("Este programa indica el estado civil.");
             Console.Write("Introduce la inicial de tu estado civil (C, S, V o D): ");
@@ -78,7 +78,7 @@ namespace _2_Estructuras_iterativas
             Console.WriteLine();
         }
 
-        static void ejercicio4()
+        static void Ejercicio4()
         {
             Console.WriteLine("Este programa muestra la tabla de multiplicar de un número.");
             int num = ParseInt("Introduce un número de 1 al 9: ");
@@ -97,7 +97,7 @@ namespace _2_Estructuras_iterativas
             Console.WriteLine();
         }
 
-        static void ejercicio5()
+        static void Ejercicio5()
         {
             Console.WriteLine("Este programa realiza acciones sobre un string");
             
@@ -134,7 +134,7 @@ namespace _2_Estructuras_iterativas
             Console.WriteLine();
         }
 
-        static void ejercicio6()
+        static void Ejercicio6()
         {
             Console.WriteLine("Este programa muestra el factorial de un número");
 
@@ -151,7 +151,7 @@ namespace _2_Estructuras_iterativas
             Console.WriteLine();
         }
 
-        static void ejercicio7()
+        static void Ejercicio7()
         {
             Console.WriteLine("Este programa crea el abecedario en mayúsculas");
             int caracter = 90;
@@ -160,13 +160,14 @@ namespace _2_Estructuras_iterativas
                 Console.Write($"{Convert.ToString((char)caracter)} ");
                 caracter--;
             }
+            Console.WriteLine();
 
             Console.WriteLine();
             Console.WriteLine("----------------------------------");
             Console.WriteLine();
         }
 
-        static void ejercicio8()
+        static void Ejercicio8()
         {
             Console.WriteLine("Este programa genera un número aleatorio entre 10 y 30");
             Random random = new Random();
@@ -177,7 +178,7 @@ namespace _2_Estructuras_iterativas
             Console.WriteLine();
         }
 
-        static void ejercicio9()
+        static void Ejercicio9()
         {
             Console.WriteLine("Este programa crea un array de enteros");
             int cant = ParseInt("Introduce la longitud del array: ");
@@ -200,7 +201,7 @@ namespace _2_Estructuras_iterativas
             Console.WriteLine();
         }
 
-        static void ejercicio10()
+        static void Ejercicio10()
         {
             Console.WriteLine("Este programa define un array de 10 enteros y los ordena");
             int[] desordenados = new int[10];
@@ -216,6 +217,7 @@ namespace _2_Estructuras_iterativas
             {
                 Console.Write($"{number} ");
             }
+            Console.WriteLine();
 
             Array.Sort(desordenados);
             Console.WriteLine("Array ordenado: ");
@@ -229,7 +231,7 @@ namespace _2_Estructuras_iterativas
             Console.WriteLine();
         }
 
-        static void ejercicio11()
+        static void Ejercicio11()
         {
             Console.WriteLine("Este programa crea una pila e introduce varios valores enteros por teclado");
             Stack pila = new Stack();
@@ -308,17 +310,17 @@ namespace _2_Estructuras_iterativas
 
         static void Main(string[] args)
         {
-            ejercicio1();
-            ejercicio2();
-            ejercicio3();
-            ejercicio4();
-            ejercicio5();
-            ejercicio6();
-            ejercicio7();
-            ejercicio8();
-            ejercicio9();
-            ejercicio10();
-            ejercicio11();
+            Ejercicio1();
+            Ejercicio2();
+            Ejercicio3();
+            Ejercicio4();
+            Ejercicio5();
+            Ejercicio6();
+            Ejercicio7();
+            Ejercicio8();
+            Ejercicio9();
+            Ejercicio10();
+            Ejercicio11();
 
             Console.WriteLine("Pulsa una tecla para salir...");
             Console.ReadKey();
